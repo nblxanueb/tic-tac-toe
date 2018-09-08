@@ -38,7 +38,7 @@ h1 {
   position: absolute;
   top: 15%;
   left: 5%;
-  color: rgb(17, 17, 17);
+  color: rgba(17, 17, 17, 0.9);
   transform: rotate(-0.015turn);
   line-height: 1rem;
   padding-left: 20px;
@@ -72,6 +72,19 @@ span {
   padding-left: 2rem;
 }
 
+.total {
+  transform: translate(0px, -10px);
+}
+
+.totalCount {
+  padding-left: 1rem;
+}
+
+hr {
+  border: 2px solid rgba(17, 17, 17, 0.9);
+  transform: translate(-10px, 0px);
+}
+
 .container2 {
   display: grid;
   text-align: center;
@@ -84,8 +97,6 @@ span {
   padding-top: 10px;
   color: rgba(251, 251, 67, 0.7);
 }
-
-
 
 .TL, .TC, .TR, .CL, .CC, .CR, .BL, .BC, .BR {
   padding: 20px;
@@ -188,11 +199,10 @@ a {
     border: none;
     background: transparent;
     border-bottom-right-radius: 0;
-    shadow: none;
     display: flex;
-    position: absolute;
-    top: 81%;
-    left: -3%;
+    position: fixed;
+    top: 76%;
+    /* left: -3%; */
     justify-content: center;
     text-align: left;
     width: 100%;
@@ -200,5 +210,8 @@ a {
     max-height: 12rem;
     padding-top: 1rem;
     box-shadow: none;
+  }
+  hr, .total, .totalCount {
+    visibility: hidden;
   }
 }

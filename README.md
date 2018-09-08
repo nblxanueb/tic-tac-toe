@@ -21,6 +21,6 @@ To play another round, users can press the 'New Game?' link.
 
 # New Feature:
 
-Added win count and draw scenario. Now users will be alerted if the end ends in a draw. Number of wins is displayed on the screen.
+Added draw scenario, win count and total games played count. Now users will be alerted if the game ends in a draw. Number of wins is displayed on the screen as well as the number of total games.
 
-![new feature](https://i.imgur.com/IZvaizB.jpg)
+![new feature](https://i.imgur.com/CgrEEsB.jpg)
