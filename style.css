@@ -1,0 +1,138 @@
+body {
+  background-image: url('chalkboard1.jpg'); /*image source https://blog.classdojo.com/wp-content/uploads/2015/04/chalkboard.jpg*/
+  background-size: 100%;
+  font-family: 'Love Ya Like A Sister', cursive;
+  color: rgba(255, 255, 255, 0.9);
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 4rem;
+  padding-top: 1rem;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.75);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid-container :hover {
+  cursor: pointer;
+  background: darkgrey;
+  opacity: 0.4;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 110px 110px 110px;
+  grid-template-rows: 110px 110px 110px;
+  padding: 10px;
+  position: relative;
+  margin: 1rem 0 3rem;
+  justify-content: center;
+}
+
+.container2 {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 45% 2.5% 5% 2.5% 45%;
+  grid-template-rows: 100px;
+}
+
+.name1, .name2 {
+  text-align: center;
+  padding-top: 10px;
+  color: rgba(251, 251, 67, 0.7);
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: show;
+}
+
+.TL, .TC, .TR, .CL, .CC, .CR, .BL, .BC, .BR {
+  padding: 20px;
+  font-size: 0px;
+  text-align: center;
+}
+
+.TL, .CL, .TC, .CC {
+  border-right: 5px solid rgba(255, 255, 255, 0.75);
+  border-bottom: 5px solid rgba(255, 255, 255, 0.75);
+}
+
+.BL, .BC {
+  border-right: 5px solid rgba(255, 255, 255, 0.75);
+}
+
+.TR, .CR {
+  border-bottom: 5px solid rgba(255, 255, 255, 0.75);
+}
+
+.players {
+  font-size: 1.5rem;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.players :hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.reload {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: underline rgba(251, 251, 67, 0.7);
+  transform: translate(0px, -100%);
+}
+
+footer {
+  height: 10px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 1px solid rgba(46, 46, 46, 0.796);
+  background-color: rgba(95, 95, 95, 0.25);
+}
+
+a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+@media(max-width: 500px) {
+
+  body {
+  font-size: 1rem;
+  text-align: center;
+  }
+  .players {
+    font-size: 1rem;
+  }
+  .name1, .name2 {
+    padding-top: 0px;
+  }
+  .grid-container {
+    margin-bottom: 1rem;
+  }
+  .container2 {
+    padding-top: 2rem;
+    grid-template-columns: 40% 5% 10% 5% 40%;
+  }
+  p {
+    font-size: 3rem;
+  }
+  footer {
+    transform: translate(0px, -1rem);
+  }
+}
