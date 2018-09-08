@@ -1,6 +1,9 @@
 $(document).ready(function () {
 
   let counter = 0;
+  let xWins = 0;
+  let oWins = 0;
+  let draws = 0;
   let player1 = $('.player1');
   let player2 = $('.player2');
   let name1 = $('.name1');
@@ -63,8 +66,16 @@ $(document).ready(function () {
 // compares text value of elements and determines the winner
     if ((cell1 == 'x' && cell2 == 'x' && cell3 == 'x') || (cell4 == 'x' && cell5 == 'x' && cell6 == 'x') || (cell7 == 'x' && cell8 == 'x' && cell9 == 'x') || (cell1 == 'x' && cell5 == 'x' && cell9 == 'x') || (cell7 == 'x' && cell5 == 'x' && cell3 == 'x') || (cell1 == 'x' && cell4 == 'x' && cell7 == 'x') || (cell2 == 'x' && cell5 == 'x' && cell8 == 'x') || (cell3 == 'x' && cell6 == 'x' && cell9 == 'x')) {
       alert (`${playerName1} is the winner!`);
+      xWins++;
+      $('.xWins').html(xWins);
     } else if ((cell1 == 'o' && cell2 == 'o' && cell3 == 'o') || (cell4 == 'o' && cell5 == 'o' && cell6 == 'o') || (cell7 == 'o' && cell8 == 'o' && cell9 == 'o') || (cell1 == 'o' && cell5 == 'o' && cell9 == 'o') || (cell7 == 'o' && cell5 == 'o' && cell3 == 'o') || (cell1 == 'o' && cell4 == 'o' && cell7 == 'o') || (cell2 == 'o' && cell5 == 'o' && cell8 == 'o') || (cell3 == 'o' && cell6 == 'o' && cell9 == 'o')) {
       alert(`${playerName2} is the winner!`);
+      oWins++;
+      $('.oWins').html(oWins);
+    } else if (counter == 9) {
+      alert(`it's a draw!`);
+      draws++;
+      $(".draws").html(draws);
     }
     else {
       return false;

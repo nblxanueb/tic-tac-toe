@@ -12,12 +12,13 @@
   <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
     crossorigin='anonymous'></script>
   <script src='script.js'></script>
-  <link href='favicon (3).ico' rel='icon' type='image/x-icon' />
+  <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
+  <link href='favicon.ico' rel='icon' type='image/x-icon' />
   <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <body>
-  <p>Tic Tac Toe</p>
+  <h1>Tic Tac Toe</h1>
 
   <main>
     <div class='grid-container'>
@@ -32,6 +33,15 @@
       <div class='BR'></div>
     </div>
 
+    <div class="winCount">
+      <h3>Win Count:</h3>
+      <br>
+      <p>X:<span class="xWins"></span></p>
+      <br>
+      <p>O:<span class="oWins"></span></p>
+      <br>
+      <p>draw:<span class="draws"></span></p>
+    </div>
 
     <div class='players'>
       <player1 class='player1'>Enter player 1</player1>

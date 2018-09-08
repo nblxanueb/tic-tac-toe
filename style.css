@@ -8,7 +8,7 @@ body {
   font-size: 1.5rem;
 }
 
-p {
+h1 {
   font-size: 4rem;
   padding-top: 1rem;
   border-bottom: 3px solid rgba(255, 255, 255, 0.75);
@@ -33,6 +33,45 @@ p {
   justify-content: center;
 }
 
+.winCount {
+  font-family: 'Reenie Beanie', cursive;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  color: rgb(17, 17, 17);
+  transform: rotate(-0.015turn);
+  line-height: 1rem;
+  padding-left: 20px;
+  text-align: left;
+  width: 13rem;
+  min-height: 12rem;
+  max-height: 12rem;
+  padding-top: 1rem;
+  border: 1px solid #E8E8E8;
+  border-top: 2rem solid #fdfd86;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom-right-radius: 60px 11px;
+  display: inline-block;
+  background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1 );
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+span {
+  text-align: center;
+  font-size: 4rem;
+  padding-left: 4rem;
+}
+
+.draws {
+  padding-left: 2rem;
+}
+
 .container2 {
   display: grid;
   text-align: center;
@@ -46,13 +85,7 @@ p {
   color: rgba(251, 251, 67, 0.7);
 }
 
-.hide {
-  visibility: hidden;
-}
 
-.show {
-  visibility: show;
-}
 
 .TL, .TC, .TR, .CL, .CC, .CR, .BL, .BC, .BR {
   padding: 20px;
@@ -129,10 +162,44 @@ a {
     padding-top: 2rem;
     grid-template-columns: 40% 5% 10% 5% 40%;
   }
-  p {
-    font-size: 3rem;
-  }
   footer {
-    transform: translate(0px, -1rem);
+    transform: translate(0px, -0.5rem);
+    width: 100%;
+  }
+  h3 {
+    font-size: 1rem;
+    /* transform: translate(0px, 15px); */
+  }
+  p {
+    padding-left: 2rem;
+    font-size: 1rem;
+  }
+  span {
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    color: rgba(251, 251, 67, 0.7);
+  }
+  .draws {
+    padding-left: 0.5rem;
+  }
+  .winCount {
+    color: white;
+    font-family: 'Love Ya Like A Sister', cursive;
+    transform: none;
+    border: none;
+    background: transparent;
+    border-bottom-right-radius: 0;
+    shadow: none;
+    display: flex;
+    position: absolute;
+    top: 81%;
+    left: -3%;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    min-height: 8rem;
+    max-height: 12rem;
+    padding-top: 1rem;
+    box-shadow: none;
   }
 }
