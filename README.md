@@ -18,3 +18,9 @@ Whichever user succeeds in placing three of their marks in a horizontal, vertica
 ![winner](https://i.imgur.com/MoYCBTG.jpg)
 
 To play another round, users can press the 'New Game?' link.
+
+# New Feature:
+
+Added win count and draw scenario. Now users will be alerted if the end ends in a draw. Number of wins is displayed on the screen.
+
+![new feature](https://i.imgur.com/IZvaizB.jpg)
