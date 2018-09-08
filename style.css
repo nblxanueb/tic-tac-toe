@@ -156,6 +156,7 @@ a {
 
 @media(max-width: 640px) {
   body {
+  background-image: url('chalkboardCell.jpg');
   font-size: 1rem;
   text-align: center;
   }
