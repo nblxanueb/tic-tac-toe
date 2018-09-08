@@ -192,6 +192,7 @@ a {
     padding-left: 0.5rem;
   }
   .winCount {
+    width: auto;
     color: white;
     font-family: 'Love Ya Like A Sister', cursive;
     transform: none;
@@ -200,10 +201,9 @@ a {
     border-bottom-right-radius: 0;
     display: flex;
     position: absolute;
-    top: 85%;
+    top: 90%;
     justify-content: center;
     text-align: left;
-    width: 100%;
     min-height: 8rem;
     max-height: 12rem;
     padding-top: 1rem;
